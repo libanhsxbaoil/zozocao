@@ -42,6 +42,13 @@ http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+
 http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch) script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads/YouTube_remove_ads_request.js, requires-body=true, binary-body-mode=true, tag=YouTubeRQ
 http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads/YouTube_remove_ads_response.js, requires-body=true, binary-body-mode=true, tag=YouTubeRP
 
+#************************************#
+#Chatgp5
+#hostname = api.chatgp5.cc
+http-response ^https?:\/\/api\.chatgp5\.cc\/app\/user\/getCurrentInfo requires-body=1,script-path=https://raw.githubusercontent.com/libanhsxbaoil/zozocao/refs/heads/main/Scripts/chat.js, tag=Chatgp5
+
+#************************************#
+
 [Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data=""
 
