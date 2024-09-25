@@ -25,7 +25,7 @@ for (const key in list) {
       "product_id": list[key].id,
       "features": ["unlock"]
     }];
-    chxm1023["settings"]["__identity__"]["expiration"] = "2099-09-09T09:09:09+00:00";
+    chxm1023["settings"]["__identity__"]["expiration"] = "2025-09-09T09:09:09+00:00";
     break;
   }
 }
