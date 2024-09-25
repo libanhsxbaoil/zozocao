@@ -10,7 +10,7 @@ const list = {
   'firstlight': { id: "com.filmicpro.firstlight.1y_t130_bundle_creator" },  //Firstlight-照片应用
   'doubletake': { id: "com.filmicpro.doubletake.1w_t20_bundle_creator" },  //Doubletake
   'focos': { id: "com.focos.1y_t130_bundle_creator" },  //Focos-单反相机
-  'remini': { id: "com.bigwinepot.nwdn.international.1m_p99_99_ft_pro" },  //Remini-人工智能修图
+  'remini': { id: "com.bigwinepot.nwdn.international.1y_p99_99_ft_pro" },  //Remini-人工智能修图
   'focoslive': { id: "com.focoslive.1y_t130_adj" },  //Focos live-视频编辑工具
   'thirtydayfitness': { id: "com.vigorapps.30DayFitness.1y_t130_bundle_adj" },  //30 Day Fitness-30天减肥运动
   'sleep': { id: "com.bendingspoonsapps.SleepHelp.1y_t100_bundle_adj" },  //Sleep-睡眠助手
@@ -21,7 +21,7 @@ for (const key in list) {
   if (new RegExp(`^${key}`, `i`).test(ua)) {
     chxm1023["me"]["active_subscriptions_ids"] = [list[key].id];
     chxm1023["me"]["active_bundle_subscriptions"] = [{
-      "expiry": "2099-09-09T09:09:09+00:00",
+      "expiry": "2025-09-09T09:09:09+00:00",
       "product_id": list[key].id,
       "features": ["unlock"]
     }];
