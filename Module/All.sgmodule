@@ -24,8 +24,8 @@ Sub-Store Sync=type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path
 #************************************#
 #Youtube
 #hostname = *.googlevideo.com, youtubei.googleapis.com
-http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads/YouTube_remove_ads_request.js, requires-body = true, binary-body-mode = true, tag=YouTubeRq
-http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads/YouTube_remove_ads_response.js, requires-body = true, binary-body-mode = true, tag=YouTubeRp
+http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch) script-path = https://raw.githubusercontent.com/libanhsxbaoil/zozocao/refs/heads/main/Scripts/YT-request.js, requires-body = true, binary-body-mode = true, tag=YouTubeRq
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path = https://raw.githubusercontent.com/libanhsxbaoil/zozocao/refs/heads/main/Scripts/YT-reponse.js, requires-body = true, binary-body-mode = true, tag=YouTubeRp
 #************************************#
 #Nicegram
 #hostname = nicegram.cloud
