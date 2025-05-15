@@ -48,7 +48,7 @@ Chatgp5 = type=http-response,pattern=^https?:\/\/api\.chatgp5\.cc\/app\/user\/ge
 
 #************************************#
 [Map Local]
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data=""
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 [MITM]
 hostname = %APPEND% purchase-*-api.*.com, user-kaji-api.b612kaji.com,*.oracle.bendingspoonsapps.com,user-snow-api.snow.me,us-central1-alight-creative.cloudfunctions.net,api.qonversion.io,api.esound.app,us-central1-muslim-pro-app.cloudfunctions.net,buy.itunes.apple.com,subscription.grammarly.com,order.creativeappnow.com,api.adapty.io,api-sub.meitu.com,api.picsart.com,*.wallpaperscraft.com,premium*.truecaller.com,nicegram.cloud,sub.store,ap*.intsig.net,app.monkeyuni.net,spclient.wg.spotify.com,*.googlevideo.com,youtubei.googleapis.com,*.camera360.com,api.chatgp5.cc,api.revenuecat.com
