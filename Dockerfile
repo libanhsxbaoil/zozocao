@@ -4,7 +4,7 @@ WORKDIR /opt/app
 
 RUN apk add --no-cache nodejs curl tzdata
 
-ENV TIME_ZONE=Asia/shanghai
+ENV TIME_ZONE=Asia/Shanghai 
 
 RUN cp /usr/share/zoneinfo/$TIME_ZONE /etc/localtime && echo $TIME_ZONE > /etc/timezone
 
